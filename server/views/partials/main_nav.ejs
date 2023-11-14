@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="/">INFR3120</a>
+      <a class="navbar-brand" href="/">Assignment Planner</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -37,6 +37,14 @@
               <a class="nav-link" href="/services">
             <% } %>
               <i class="fa-solid fa-users-gear"></i> Services</a>
+          </li>
+          <li class="nav-item">
+            <% if(title == "Book List") { %>
+              <a class="nav-link active" href="/bookslist">
+            <% } else { %> 
+              <a class="nav-link" href="/bookslist">
+            <% } %>
+            <i class="fa-solid fa-book"></i> Books</a>
           </li>
           <li class="nav-item">
             <% if(title == "Contact") { %>
