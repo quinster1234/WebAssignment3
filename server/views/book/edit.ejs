@@ -10,32 +10,32 @@
 
             <form class="form" method="POST">
                 <div class="form-group">
-                    <label for="nameTextField">Book Title</label>
+                    <label for="taskNameTextField">Task Name</label>
                     <input type="text" class="form-control"
-                    id="nameTextField"
-                    placeholder="Enter the Book Title"
-                    name="Name" 
-                    value="<%= Book.Name %>"
+                    id="taskNameTextField"
+                    placeholder="Enter the Task Name"
+                    name="TaskName" 
+                    value="<%= Book.TaskName %>"
                     required>
                 </div>
 
                 <div class="form-group">
-                    <label for="authorTextField">Author</label>
+                    <label for="dueDateTextField">Due Date</label>
                     <input type="text" class="form-control"
-                    id="authorTextField"
-                    placeholder="Enter the Book's Author"
-                    name="Author" 
-                    value="<%= Book.Author %>"
+                    id="dueDateTextField"
+                    placeholder="Enter the Task due Date"
+                    name="DueDate" 
+                    value="<%= Book.DueDate %>"
                     required>
                 </div>
 
                 <div class="form-group">
-                    <label for="publishedTextField">Year</label>
+                    <label for="subjectTextField">Subject</label>
                     <input type="text" class="form-control"
-                    id="publishedTextField"
-                    placeholder="Enter the Year of Publication"
-                    name="Published" 
-                    value="<%= Book.Published %>"
+                    id="subjectTextField"
+                    placeholder="Enter the Subject"
+                    name="Subject" 
+                    value="<%= Book.Subject %>"
                     required>
                 </div>
 
@@ -43,21 +43,11 @@
                     <label for="descriptionTextArea">Description</label>
                     <textarea type="text" class="form-control"
                     id="descriptionTextArea"
-                    placeholder="Enter the a brief description of the book"
+                    placeholder="Enter the a brief description of the task"
                     name="Description" 
                     required>
                     <%= Book.Description %>
                     </textarea>
-                </div>
-
-                <div class="form-group">
-                    <label for="priceTextField">Price</label>
-                    <input type="text" class="form-control"
-                    id="priceTextField"
-                    placeholder="Enter the Book's Price"
-                    name="Price" 
-                    value="<%= Book.Price %>"
-                    required>
                 </div>
 
                 <button class="btn btn-primary" type="submit">

@@ -39,11 +39,11 @@ module.exports.DislayBooklist = async (req,res,next)=>{ //< Mark function as asy
 module.exports.ProcessBook = async (req,res,next)=>{
     try{
         let newBook = Book({
-            "Name":req.body.Name,
-            "Author": req.body.Author,
-            "Published": req.body.Published,
+            "TaskName":req.body.TaskName,
+            "DueDate": req.body.DueDate,
+            "Subject": req.body.Subject,
             "Description": req.body.Description,
-            "Price": req.body.Price
+            
         });
         Book.create(newBook).then(() =>{
             res.redirect('/bookslist')
@@ -82,11 +82,10 @@ module.exports.ProcessEditBook = (req,res,next)=>{
         const id = req.params.id;
         let updatedBook = Book({
             "_id":id,
-            "Name":req.body.Name,
-            "Author": req.body.Author,
-            "Published": req.body.Published,
+            "TaskName":req.body.TaskName,
+            "DueDate": req.body.DueDate,
+            "Subject": req.body.Subject,
             "Description": req.body.Description,
-            "Price": req.body.Price
         });
         Book.findByIdAndUpdate(id,updatedBook).then(()=>{
             res.redirect('/bookslist')
