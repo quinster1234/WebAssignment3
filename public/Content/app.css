@@ -1,0 +1,8 @@
+main {
+    text-align: center;
+    align-items: center;  
+}
+/*Background image for the webpages*/
+body{
+    background-image: url(/Asset/background.jpeg);  
+}

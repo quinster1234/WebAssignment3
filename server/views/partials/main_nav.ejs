@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="/">Assignment Planner</a>
+      <a class="navbar-brand" href="/home">Assignment Planner</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -15,44 +15,12 @@
               <i class="fa-solid fa-lg fa-house-laptop"></i> Home</a>
           </li>
           <li class="nav-item">
-            <% if(title == "About Us") { %>
-              <a class="nav-link active" href="/about">
-            <% } else { %>
-              <a class="nav-link" href="/about">
-            <% } %>
-              <i class="fa-solid fa-address-card"></i> About</a>
-          </li>
-          <li class="nav-item">
-            <% if(title == "Products") { %>
-              <a class="nav-link active" href="/products">
-            <% } else { %> 
-                <a class="nav-link" href="/products">
-            <% } %>
-              <i class="fa-solid fa-bars"></i> Products</a>
-          </li>
-          <li class="nav-item">
-            <% if(title == "Services") { %>
-              <a class="nav-link active" href="/services">
-            <% } else { %> 
-              <a class="nav-link" href="/services">
-            <% } %>
-              <i class="fa-solid fa-users-gear"></i> Services</a>
-          </li>
-          <li class="nav-item">
             <% if(title == "Book List") { %>
               <a class="nav-link active" href="/bookslist">
             <% } else { %> 
               <a class="nav-link" href="/bookslist">
             <% } %>
-            <i class="fa-solid fa-book"></i> Books</a>
-          </li>
-          <li class="nav-item">
-            <% if(title == "Contact") { %>
-              <a class="nav-link active" href="contactus">
-            <% } else { %> 
-              <a class="nav-link" href="contactus">
-            <% } %>
-              <i class="fa-solid fa-phone-flip"></i> Contact Us</a>
+            <i class="fa-regular fa-calendar-days"></i></i> Planner</a>
           </li>
         </ul>
       </div>
