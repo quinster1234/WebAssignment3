@@ -2,12 +2,12 @@
 
 <%- include ../partials/main_nav.ejs %>
 
-<!-- Content for the Add page -->
+<!-- Content for the edit page -->
 <div class="container">
     <div class="row">
         <div class="offset-md-3 col-md-6">
-            <h1>Edit Tasks</h1>
-
+            <h1><%= title %></h1>
+            <!--Sets the labels, textfields and placeholders for task name-->
             <form class="form" method="POST">
                 <div class="form-group">
                     <label for="taskNameTextField">Task Name</label>
@@ -18,7 +18,7 @@
                     value="<%= Book.TaskName %>"
                     required>
                 </div>
-
+                <!--Sets the labels, textfields and placeholders for due date-->
                 <div class="form-group">
                     <label for="dueDateTextField">Due Date</label>
                     <input type="text" class="form-control"
@@ -28,7 +28,7 @@
                     value="<%= Book.DueDate %>"
                     required>
                 </div>
-
+                <!--Sets the labels, textfields and placeholders for the subject-->
                 <div class="form-group">
                     <label for="subjectTextField">Subject</label>
                     <input type="text" class="form-control"
@@ -38,7 +38,7 @@
                     value="<%= Book.Subject %>"
                     required>
                 </div>
-
+                <!--Sets the labels, textfields and placeholders for the description-->
                 <div class="form-group">
                     <label for="descriptionTextArea">Description</label>
                     <textarea type="text" class="form-control"
@@ -49,10 +49,10 @@
                     <%= Book.Description %>
                     </textarea>
                 </div>
-
+                <!--This is the submit button-->
                 <button class="btn btn-primary" type="submit">
                     <i class="fas fa-edit"></i> Submit</button>
-                
+                    <!--This is the cancel button-->
                     <a href="/bookslist" class="btn btn-warning">
                         <i class="fas fa-undo"></i> Cancel</a>
 

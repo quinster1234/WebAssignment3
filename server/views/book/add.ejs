@@ -7,7 +7,7 @@
     <div class="row">
         <div class="offset-md-3 col-md-6">
             <h1><%= title %></h1>
-
+            <!--This is for the label, textfield, and placeholder for the task name-->
             <form class="form" method="POST">
                 <div class="form-group">
                     <label for="taskNameTextField">Task Name</label>
@@ -16,7 +16,7 @@
                     placeholder="Enter the Task Name"
                     name="TaskName" required>
                 </div>
-
+                <!--This is for the label, textfield, and placeholder for the due date-->
                 <div class="form-group">
                     <label for="dueDateTextField">Due Date</label>
                     <input type="text" class="form-control"
@@ -24,7 +24,7 @@
                     placeholder="Enter the Due Date"
                     name="DueDate" required>
                 </div>
-
+                <!--This is for the label, textfield, and placeholder for the subject-->
                 <div class="form-group">
                     <label for="subjectTextField">Subject</label>
                     <input type="text" class="form-control"
@@ -32,7 +32,7 @@
                     placeholder="Enter the Subject"
                     name="Subject" required>
                 </div>
-
+                <!--This is for the label, textfield, and placeholder for the description-->
                 <div class="form-group">
                     <label for="descriptionTextArea">Description</label>
                     <textarea type="text" class="form-control"
@@ -40,10 +40,10 @@
                     placeholder="Enter the a brief description of the task"
                     name="Description" required></textarea>
                 </div>
-
+                <!--This is the submit button-->
                 <button class="btn btn-primary" type="submit">
                     <i class="fas fa-edit"></i> Submit</button>
-                
+                    <!--This is the cancel button-->
                     <a href="/bookslist" class="btn btn-warning">
                         <i class="fas fa-undo"></i> Cancel</a>
 

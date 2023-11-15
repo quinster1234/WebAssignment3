@@ -64,7 +64,7 @@ module.exports.EditBook = async (req,res,next)=>{
     const bookToEdit = await Book.findById(id);
     res.render('book/edit',
     {
-        title:'Edit Book',
+        title:'Edit Task',
         Book:bookToEdit
     })
 }

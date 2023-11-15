@@ -2,6 +2,9 @@ main {
     text-align: center;
     align-items: center;  
 }
+.welcomeMessage1{
+    font-weight: bold;
+}
 /*Background image for the webpages*/
 body{
     background-image: url(/Asset/background.jpeg);  
